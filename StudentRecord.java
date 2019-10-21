@@ -7,15 +7,29 @@ public class StudentRecord
    public StudentRecord(int [] s)
    {
       scores = s;
+  
    }
    
    /** returns the average (arithmetic mean) of the values in scores
     *  whose subscripts are between first and last, inclusive
     *  PRECONDITION: 0 <= first <= last < scores.length
     */
-   private double average(int first, int last)
+   public double average(int first, int last)
    {
-      return 0; //here so the class compiles
+       int sum = 0;
+       boolean hasImproved = true;
+       int n = 0;
+       for (int i =0; i < scores.length; i++)
+       {
+           if (hasImproved = false) {
+            sum += scores[i];
+            n +=1;
+        } else if (hasImproved = true) {
+            sum += scores.length/2;
+            n +=1;
+        }
+       }
+       return sum/n; //here so the class compiles
    }
     
    /** returns true if each successive value in scores is greater than
