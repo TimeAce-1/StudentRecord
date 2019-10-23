@@ -50,17 +50,20 @@ public class StudentRecord
       double sum = 0;
       int n = 0;
       boolean Improved = false;
+      if (Improved = false) {
       for (int i = 0; i < scores.length; i++)
-      {
-          if (Improved = true)
-        {
-          sum = scores[half];
-          n +=1;
-        } else {
+      { 
           sum += scores[i];
           n+=1;
-        }
       }
-      return sum/n; //here so the class compiles
-   } 
+      //here so the class compiles
+     } else if (Improved = true) {
+      for (int i =0; i < half; i++)
+      {
+          sum += scores[half+i];
+          n+=1;
+      }
+     }
+     return sum/n;
+    } 
 }
